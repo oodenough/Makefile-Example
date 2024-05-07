@@ -1,6 +1,8 @@
 Makefile-Example
 ================
 
+[English](README.md) | [中文](README-zh.md)
+
 Linux/Mac Makefile 示例。
 
 原始文章在 [这里](http://cognitivewaves.wordpress.com/makefiles/)
