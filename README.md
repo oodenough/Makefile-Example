@@ -1,12 +1,39 @@
 Makefile-Example
 ================
 
-Linux Makefile example for Windows developers detailed in the post http://cognitivewaves.wordpress.com/makefiles/
+Linux/Mac Makefile example.
 
-After cloning the repository, create the required output directories
+original post is [here](http://cognitivewaves.wordpress.com/makefiles/)
 
-`~/src/Makefile-Example $ mkdir -p app/bin app/obj math/bin math/obj`
+I've done some modification so **Chinese** info is echoed while executing `make` command.
 
-After building, add the path to the shared object
+## how to use
 
-`~/src/Makefile-Example $ export LD_LIBRARY_PATH=~/src/Makefile-Example/math/bin/`
+After cloning the repository:
+
+1. build with make
+
+```bash
+cd Makefile-Example
+make
+```
+
+2. add `libmath.so` to path
+
+* linux:
+
+```bash
+export LD_LIBRARY_PATH=path/to/Example-Makefile/math/bin/
+```
+
+* mac
+
+```bash
+export DYLD_LIBRARY_PATH=path/to/Example-Makefile/math/bin/
+```
+
+3. execute the program
+
+```bash
+./app/bin/app.exe 4
+```
